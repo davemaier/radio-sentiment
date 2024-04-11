@@ -1,0 +1,22 @@
+[project]
+name = "radio-sentiment"
+version = "0.0.1"
+description = "A tool to analyze the sentiment on environmental topics of radio transcripts."
+authors = [
+    {name = "David Maier", email = "david@davidmaier.at"},
+]
+dependencies = [
+    "marimo>=0.3.12",
+    "openai>=1.17.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+start.cmd = "marimo edit src/transcript_analyzer.py"
+start.env_file = ".env"
