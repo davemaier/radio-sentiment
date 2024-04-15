@@ -1,0 +1,12 @@
+{
+  "ads": [
+    {
+      "id": "<int_incremental>",
+      "product": "<string_product_name>",
+      "company": "<string_company_name>",
+      "adverse": "<boolean>",
+      "cause": "<string_cause>"
+    }
+  ],
+  "total": "<int_total_ads>"
+}
